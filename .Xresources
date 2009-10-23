@@ -1,0 +1,85 @@
+! ~/.Xresources
+
+!             *background: #050505
+!             *foreground: #eeeeee
+           Xcursor.theme: whiteglass
+        xpdf.initialZoom: width
+!	      emacs.font: -*-fixed-*-r-*-*-15-*-100-100-*-*-*-*
+!	      emacs.font: -windows-proggycleanszbp-medium-r-normal--13-80-96-96-c-70-iso8859-1
+!              Emacs.reverseVideo: on
+	      Emacs*font: -xos4-terminus-medium-r-*-*-12-*-*-*-*-*-ISO10646-1
+       Emacs.cursorColor: white
+	Emacs.background: #151515
+	Emacs.foreground: #aaaaaa
+	   Emacs.menuBar: off
+Emacs.verticalScrollBars: off
+	   Emacs.toolBar: off
+!	Emacs.background: black
+!	Emacs.foreground: white
+!	   Emacs.menuBar: off
+!Emacs.verticalScrollBars: off
+!	   Emacs.toolBar: off
+!	   XTerm*font: -*-lucidatypewriter-medium-*-*-*-12-*-*-*-*-*-iso8859-1
+	   XTerm*font: -xos4-terminus-medium-r-*-*-12-*-*-*-*-*-ISO10646-1
+     XTerm*background: #151515
+     XTerm*foreground: #bbbbbb
+  XTerm*trimSelection: true
+  XTerm*eightBitInput: false
+XTerm*metaSendsEscape: true
+      XTerm*saveLines: 1000
+    XTerm*reverseWrap: true
+     XTerm*boldColors: false
+       XTerm*boldMode: false
+	XTerm*colorBD: LightGreen
+    XTerm*colorBDMode: true
+         XTerm*locale: true
+
+	   UXTerm*font: -xos4-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
+     UXTerm*background: black
+     UXTerm*foreground: white
+  UXTerm*trimSelection: true
+  UXTerm*eightBitInput: false
+UXTerm*metaSendsEscape: true
+      UXTerm*saveLines: 1000
+    UXTerm*reverseWrap: true
+     UXTerm*boldColors: false
+       UXTerm*boldMode: false
+	UXTerm*colorBD: LightGreen
+    UXTerm*colorBDMode: true
+
+!     URxvt.background: black
+!     URxvt.foreground: white
+!	URxvt.colorBD: LightGreen
+!	URxvt.colorIT: LightGreen
+!	URxvt.colorUL: white
+!      URxvt.saveLines: 1000
+!	   URxvt.font: -xos4-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
+!       URxvt.boldFont: -xos4-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
+!     URxvt.italicFont: -xos4-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
+! URxvt.boldItalicFont: -xos4-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
+!       URxvt.insecure: true
+!	  URxvt.meta8: true
+!      URxvt.scrollBar: false
+!     URxvt.visualBell: true
+!  URxvt.trimSelection: true
+!  URxvt.eightBitInput: false
+!URxvt.metaSendsEscape: true
+!    URxvt.reverseWrap: true
+
+!xbiff*fullPixmap:mailfull
+!xbiff*emptyPixmap:mailempty
+!xbiff*fullPixmapMask:mailfullmsk
+!xbiff*emptyPixmapMask:mailemptymsk
+!xbiff*shapeWindow:true
+!xbiff*checkCommand:mailcheck
+!Aterm*cursorColor: grey
+!Aterm*cursorColor2: black
+!Aterm*font: *-fixed-*-r-*-*-15-*-100-100-*-*-*-*
+!Aterm*font: -*-lucidatypewriter-medium-*-*-*-12-*-*-*-*-*-iso8859-1
+!Aterm*background: black
+!Aterm*foreground: white
+!Aterm*scrollBar: False
+!Aterm*transparent: false
+!Aterm*trimSelection: True
+!Aterm*VisualBell: True
+
