@@ -1,12 +1,9 @@
 ! ~/.Xresources
 
-!             *background: #050505
-!             *foreground: #eeeeee
            Xcursor.theme: whiteglass
+
         xpdf.initialZoom: width
-!	      emacs.font: -*-fixed-*-r-*-*-15-*-100-100-*-*-*-*
-!	      emacs.font: -windows-proggycleanszbp-medium-r-normal--13-80-96-96-c-70-iso8859-1
-!              Emacs.reverseVideo: on
+
 	      Emacs*font: -xos4-terminus-medium-r-*-*-12-*-*-*-*-*-ISO10646-1
        Emacs.cursorColor: white
 	Emacs.background: #151515
@@ -14,12 +11,7 @@
 	   Emacs.menuBar: off
 Emacs.verticalScrollBars: off
 	   Emacs.toolBar: off
-!	Emacs.background: black
-!	Emacs.foreground: white
-!	   Emacs.menuBar: off
-!Emacs.verticalScrollBars: off
-!	   Emacs.toolBar: off
-!	   XTerm*font: -*-lucidatypewriter-medium-*-*-*-12-*-*-*-*-*-iso8859-1
+
 	   XTerm*font: -xos4-terminus-medium-r-*-*-12-*-*-*-*-*-ISO10646-1
      XTerm*background: #151515
      XTerm*foreground: #bbbbbb
