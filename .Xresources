@@ -6,15 +6,15 @@
 
 	      Emacs*font: -xos4-terminus-medium-r-*-*-12-*-*-*-*-*-ISO10646-1
        Emacs.cursorColor: white
-	Emacs.background: #151515
-	Emacs.foreground: #aaaaaa
+	Emacs.background: #2f4f4f
+	Emacs.foreground: #ffffff
 	   Emacs.menuBar: off
 Emacs.verticalScrollBars: off
 	   Emacs.toolBar: off
 
 	   XTerm*font: -xos4-terminus-medium-r-*-*-12-*-*-*-*-*-ISO10646-1
-     XTerm*background: #151515
-     XTerm*foreground: #bbbbbb
+     XTerm*background: #2f4f4f
+     XTerm*foreground: white
   XTerm*trimSelection: true
   XTerm*eightBitInput: false
 XTerm*metaSendsEscape: true
