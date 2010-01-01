@@ -64,6 +64,7 @@ $WM & wmpid=$!
 ## Applications
 
 unclutter -idle 1 -jitter 10 -root &
+xscreensaver -no-splash &
 #trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 10 --transparent true --tint 0x191970 --height 12 &
 nm-applet &
 #sleep 1 # defer starting of other apps for 1 second -- give emacs and nm-applet some extra time
