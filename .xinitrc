@@ -10,13 +10,16 @@ set input-meta on
 set output-meta on
 set convert-meta off
 
+# use dvorak
+setxkbmap se_sv_dvorak
+
 # fonts and other
 xset +fp $HOME/.fonts/misc/
 xset +fp $HOME/.fonts/artwiz-aleczapka-se-1.3/
 xset +fp $HOME/.fonts/proggyfonts.com/
 xset fp rehash
 xset b off         # no bell
-xset m 3           # mouse buttons
+xset m 2 2         # mouse sensitivity
 xset r rate 300 40 # keybord repeat rate
 #xgamma -gamma 1.1
 

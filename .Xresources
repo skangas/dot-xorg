@@ -1,62 +1,122 @@
-! ~/.Xresources
+!! Zenburn-colors
+#define ZENBURN_COLOR_FG                  #dcdccc
+#define ZENBURN_COLOR_BG                  #3f3f3f
 
-           Xcursor.theme: whiteglass
+#define ZENBURN_COLOR_TERM_BLACK          ZENBURN_COLOR_BG
+#define ZENBURN_COLOR_TERM_DARK_RED       #705050
+#define ZENBURN_COLOR_TERM_DARK_GREEN     #60b48a
+#define ZENBURN_COLOR_TERM_DARK_YELLOW    #dfaf8f
+#define ZENBURN_COLOR_TERM_DARK_BLUE      #506070
+#define ZENBURN_COLOR_TERM_DARK_MAGENTA   ZENBURN_COLOR_FG
+!#dc8cc3
+#define ZENBURN_COLOR_TERM_DARK_CYAN      #8cd0d3
+#define ZENBURN_COLOR_TERM_LIGHT_GRAY     COLOR_FG
 
-        xpdf.initialZoom: width
+#define ZENBURN_COLOR_TERM_DARK_GRAY      #709080
+#define ZENBURN_COLOR_TERM_LIGHT_RED      #dca3a3
+#define ZENBURN_COLOR_TERM_LIGHT_GREEN    #c3bf9f
+#define ZENBURN_COLOR_TERM_LIGHT_YELLOW   #f0dfaf
+#define ZENBURN_COLOR_TERM_LIGHT_BLUE     #94bff3
+#define ZENBURN_COLOR_TERM_LIGHT_MAGENTA  #ec93d3
+#define ZENBURN_COLOR_TERM_LIGHT_CYAN     ZENBURN_COLOR_FG
+! #93e0e3
+#define ZENBURN_COLOR_TERM_WHITE          #ffffff
 
-	      Emacs*font: -xos4-terminus-medium-r-*-*-12-*-*-*-*-*-ISO10646-1
-       Emacs.cursorColor: white
-	Emacs.background: #2f4f4f
-	Emacs.foreground: #ffffff
-	   Emacs.menuBar: off
-Emacs.verticalScrollBars: off
-	   Emacs.toolBar: off
+! color0 black
+! color1 red3
+! color2 green3
+! color3 yellow3
+! color4 dark_blue
+! color5 magenta3
+! color6 cyan3
+! color7 gray90.
 
-	   XTerm*font: -xos4-terminus-medium-r-*-*-12-*-*-*-*-*-ISO10646-1
-     XTerm*background: #2f4f4f
-     XTerm*foreground: white
-  XTerm*trimSelection: true
-  XTerm*eightBitInput: false
-XTerm*metaSendsEscape: true
-      XTerm*saveLines: 1000
-    XTerm*reverseWrap: true
-     XTerm*boldColors: false
-       XTerm*boldMode: false
-	XTerm*colorBD: LightGreen
-    XTerm*colorBDMode: true
-         XTerm*locale: true
+! XTerm*color0:   ZENBURN_COLOR_TERM_BLACK
+! XTerm*color1:   ZENBURN_COLOR_TERM_DARK_RED
+! XTerm*color2:   ZENBURN_COLOR_TERM_DARK_GREEN
+! XTerm*color3:   ZENBURN_COLOR_TERM_DARK_YELLOW
+! XTerm*color4:   ZENBURN_COLOR_TERM_DARK_BLUE
+! XTerm*color5:   ZENBURN_COLOR_TERM_DARK_MAGENTA
+! XTerm*color6:   ZENBURN_COLOR_TERM_DARK_CYAN
+! XTerm*color7:   ZENBURN_COLOR_TERM_LIGHT_GRAY
 
-	   UXTerm*font: -xos4-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
-     UXTerm*background: black
-     UXTerm*foreground: white
-  UXTerm*trimSelection: true
-  UXTerm*eightBitInput: false
-UXTerm*metaSendsEscape: true
-      UXTerm*saveLines: 1000
-    UXTerm*reverseWrap: true
-     UXTerm*boldColors: false
-       UXTerm*boldMode: false
-	UXTerm*colorBD: LightGreen
-    UXTerm*colorBDMode: true
+! XTerm*color8:   ZENBURN_COLOR_TERM_DARK_GRAY
+! XTerm*color9:   ZENBURN_COLOR_TERM_LIGHT_RED
+! XTerm*color10:  ZENBURN_COLOR_TERM_LIGHT_GREEN
+! XTerm*color11:  ZENBURN_COLOR_TERM_LIGHT_YELLOW
+! XTerm*color12:  ZENBURN_COLOR_TERM_LIGHT_BLUE
+! XTerm*color13:  ZENBURN_COLOR_TERM_LIGHT_MAGENTA
+! XTerm*color14:  ZENBURN_COLOR_TERM_LIGHT_CYAN
+! XTerm*color15:  ZENBURN_COLOR_TERM_WHITE
 
-!     URxvt.background: black
-!     URxvt.foreground: white
-!	URxvt.colorBD: LightGreen
-!	URxvt.colorIT: LightGreen
-!	URxvt.colorUL: white
-!      URxvt.saveLines: 1000
-!	   URxvt.font: -xos4-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
-!       URxvt.boldFont: -xos4-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
-!     URxvt.italicFont: -xos4-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
-! URxvt.boldItalicFont: -xos4-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
-!       URxvt.insecure: true
-!	  URxvt.meta8: true
-!      URxvt.scrollBar: false
-!     URxvt.visualBell: true
-!  URxvt.trimSelection: true
-!  URxvt.eightBitInput: false
-!URxvt.metaSendsEscape: true
-!    URxvt.reverseWrap: true
+URxvt*color0:   ZENBURN_COLOR_TERM_BLACK
+URxvt*color1:   ZENBURN_COLOR_TERM_DARK_RED
+URxvt*color2:   ZENBURN_COLOR_TERM_DARK_GREEN
+URxvt*color3:   ZENBURN_COLOR_TERM_DARK_YELLOW
+URxvt*color4:   ZENBURN_COLOR_TERM_DARK_BLUE
+URxvt*color5:   ZENBURN_COLOR_TERM_DARK_MAGENTA
+URxvt*color6:   ZENBURN_COLOR_TERM_DARK_CYAN
+URxvt*color7:   ZENBURN_COLOR_TERM_LIGHT_GRAY
+
+URxvt*color8:   ZENBURN_COLOR_TERM_DARK_GRAY
+URxvt*color9:   ZENBURN_COLOR_TERM_LIGHT_RED
+URxvt*color10:  ZENBURN_COLOR_TERM_LIGHT_GREEN
+URxvt*color11:  ZENBURN_COLOR_TERM_LIGHT_YELLOW
+URxvt*color12:  ZENBURN_COLOR_TERM_LIGHT_BLUE
+URxvt*color13:  ZENBURN_COLOR_TERM_LIGHT_MAGENTA
+URxvt*color14:  ZENBURN_COLOR_TERM_LIGHT_CYAN
+URxvt*color15:  ZENBURN_COLOR_TERM_WHITE
+
+Xcursor.theme:             whiteglass
+xpdf.initialZoom:          width
+
+Emacs*font:                -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
+Emacs.cursorColor:         ZENBURN_COLOR_TERM_WHITE
+Emacs.foreground:          ZENBURN_COLOR_FG
+Emacs.background:          ZENBURN_COLOR_BG
+Emacs.borderColor:         ZENBURN_COLOR_BG
+Emacs.menuBar:             off
+Emacs.verticalScrollBars:  off
+Emacs.toolBar:             off
+Emacs.scrollBarWidth:      0
+
+XTerm*font:                -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
+XTerm*foreground:          ZENBURN_COLOR_FG
+XTerm*background:          ZENBURN_COLOR_BG
+XTerm*trimSelection:       true
+XTerm*eightBitInput:       false
+XTerm*metaSendsEscape:     true
+XTerm*saveLines:           10000
+XTerm*reverseWrap:         true
+XTerm*boldColors:          false
+XTerm*boldMode:            false
+XTerm*colorBDMode:         true
+XTerm*locale:              true
+                            
+UXTerm*font:               -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
+UXTerm*foreground:         ZENBURN_COLOR_FG
+UXTerm*background:         ZENBURN_COLOR_BG
+UXTerm*trimSelection:      true
+UXTerm*eightBitInput:      false
+UXTerm*metaSendsEscape:    true
+UXTerm*saveLines:          10000
+UXTerm*reverseWrap:        true
+UXTerm*boldColors:         false
+UXTerm*boldMode:           false
+UXTerm*colorBDMode:        true
+
+URxvt.depth:               32
+URxvt.foreground:          ZENBURN_COLOR_FG
+URxvt.background:          ZENBURN_COLOR_BG
+URxvt.saveLines:           1000
+URxvt.font:                -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
+URxvt.boldFont:            -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
+URxvt.italicFont:          -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
+URxvt.boldItalicFont:      -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
+URxvt.insecure:            true
+URxvt.scrollBar:           false
+URxvt.visualBell:          true
+URxvt.metaSendsEscape:     true
 
 !xbiff*fullPixmap:mailfull
 !xbiff*emptyPixmap:mailempty
