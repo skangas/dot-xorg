@@ -10,7 +10,7 @@
 #define ZENBURN_COLOR_TERM_DARK_MAGENTA   ZENBURN_COLOR_FG
 !#dc8cc3
 #define ZENBURN_COLOR_TERM_DARK_CYAN      #8cd0d3
-#define ZENBURN_COLOR_TERM_LIGHT_GRAY     COLOR_FG
+#define ZENBURN_COLOR_TERM_LIGHT_GRAY     ZENBURN_COLOR_FG
 
 #define ZENBURN_COLOR_TERM_DARK_GRAY      #709080
 #define ZENBURN_COLOR_TERM_LIGHT_RED      #dca3a3
@@ -86,7 +86,7 @@ XTerm*background:          ZENBURN_COLOR_BG
 XTerm*trimSelection:       true
 XTerm*eightBitInput:       false
 XTerm*metaSendsEscape:     true
-XTerm*saveLines:           10000
+XTerm*saveLines:           50000
 XTerm*reverseWrap:         true
 XTerm*boldColors:          false
 XTerm*boldMode:            false
@@ -99,7 +99,7 @@ UXTerm*background:         ZENBURN_COLOR_BG
 UXTerm*trimSelection:      true
 UXTerm*eightBitInput:      false
 UXTerm*metaSendsEscape:    true
-UXTerm*saveLines:          10000
+UXTerm*saveLines:          50000
 UXTerm*reverseWrap:        true
 UXTerm*boldColors:         false
 UXTerm*boldMode:           false
