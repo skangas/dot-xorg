@@ -5,6 +5,10 @@
 # go to home directory
 cd
 
+# Fix DGA Mouse Support that conflicts with SDL
+# see https://bugs.launchpad.net/ubuntu/+source/unclutter/+bug/61105
+export SDL_VIDEO_X11_DGAMOUSE="0"
+
 # locale
 set input-meta on
 set output-meta on
