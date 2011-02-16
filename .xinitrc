@@ -16,6 +16,7 @@ set convert-meta off
 
 # use dvorak
 setxkbmap se_sv_dvorak
+setxkbmap -option ctrl:nocaps
 
 # fonts and other
 xset +fp $HOME/.fonts/misc/
@@ -38,8 +39,6 @@ if [ -f $USERMODMAP ]; then
     xmodmap -quiet $USERMODMAP
 fi
 
-setxkbmap -option ctrl:nocaps
-
 # Load XTerm character class (for cutting/pasting)
 # Contents of ${HOME}/.Xdefaults is as follows:
 #   XTerm*charClass: 33:48,37:48,45-47:48,64:48
@@ -48,47 +47,28 @@ setxkbmap -option ctrl:nocaps
 #######################################
 # Start applications
 #######################################
-emacs --daemon &
-
 gnome-keyring-daemon
-if [ "`hostname`" == "castro" ]; then
-    gnome-power-manager
-fi
 
 ## Window Manager
 WM="/usr/bin/xmonad"
 #WM="$HOME/src/stumpwm/stumpwm"
-#WM="compiz"
-#WM="gnome-session"
-#WM="awesome"
-#WM="wmii"
-#gnome-wm --sm-client-id default0 &  wmpid=$!
-#gnome-panel --sm-client-id default1 &
-#nautilus --no-default-window --sm-client-id default2 &
-
 $WM & wmpid=$!
 
 ## Applications
-
 unclutter -idle 1 -jitter 10 -root &
 xscreensaver -no-splash &
-#trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 10 --transparent true --tint 0x191970 --height 12 &
 nm-applet &
-#sleep 1 # defer starting of other apps for 1 second -- give emacs and nm-applet some extra time
-#pidgin &
-#skype &
-#ekiga &
-#liferea --mainwindow-state=hidden &
 
-#gnome-power-manager
+if [ "`hostname`" == "kollontaj" ]; then
+#    gnome-power-manager
+    nm-applet &
+fi
 
-#boinc_client --attach_project setiathome.berkeley.edu 8f67d2858a1d59f59382538211bb086a >/dev/null &
-cd
+# set cursor
+xsetroot -cursor_name left_ptr
 
-# background properties
+# set background
 $HOME/bin/wallpaper.sh
-#xsetroot -solid black #-cursor_name left_ptr
-#hsetroot -fill $HOME/.backgrounds/hs-1999-25-a-full_jpg.jpg &
 
 # HANG POINT - wait for window manager to exit
 wait $wmpid
