@@ -46,7 +46,6 @@ fi
 
 #######################################
 # Start applications
-#######################################
 gnome-keyring-daemon
 
 ## Window Manager
@@ -57,6 +56,9 @@ $WM & wmpid=$!
 ## Applications
 #unclutter -idle 1 -jitter 10 -root &
 xscreensaver -no-splash &
+
+emacs &
+mpd &
 
 if [ "`hostname`" == "kollontaj" ]; then
     nm-applet &
@@ -73,4 +75,3 @@ fi
 
 # HANG POINT - wait for window manager to exit
 wait $wmpid
-
