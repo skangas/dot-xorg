@@ -1,4 +1,4 @@
-# ~/.xsession
+#!/bin/bash
 
 . ~/.environment
 
@@ -55,20 +55,21 @@ WM="/usr/bin/xmonad"
 $WM & wmpid=$!
 
 ## Applications
-unclutter -idle 1 -jitter 10 -root &
+#unclutter -idle 1 -jitter 10 -root &
 xscreensaver -no-splash &
-nm-applet &
 
 if [ "`hostname`" == "kollontaj" ]; then
-#    gnome-power-manager
     nm-applet &
+    gnome-power-manager
 fi
 
 # set cursor
 xsetroot -cursor_name left_ptr
 
 # set background
-$HOME/bin/wallpaper.sh
+if [ -x ~/bin/wallpaper.sh ]; then
+    ~/bin/wallpaper.sh
+fi
 
 # HANG POINT - wait for window manager to exit
 wait $wmpid
