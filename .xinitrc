@@ -19,10 +19,13 @@ setxkbmap se_sv_dvorak
 setxkbmap -option ctrl:nocaps
 
 # fonts and other
-xset +fp $HOME/.fonts/misc/
-xset +fp $HOME/.fonts/artwiz-aleczapka-se-1.3/
-xset +fp $HOME/.fonts/proggyfonts.com/
+[ -d /usr/share/fonts/type1/mathematica   ] && xset +fp /usr/share/fonts/type1/mathematica/
+[ -d $HOME/.fonts/misc                    ] && xset +fp $HOME/.fonts/misc/
+[ -d $HOME/.fonts/artwiz-aleczapka-se-1.3 ] && xset +fp $HOME/.fonts/artwiz-aleczapka-se-1.3/
+[ -d $HOME/.fonts/proggyfonts.com         ] && xset +fp $HOME/.fonts/proggyfonts.com/
 xset fp rehash
+
+# misc settings
 xset b off         # no bell
 xset m 2 2         # mouse sensitivity
 xset r rate 300 40 # keybord repeat rate
