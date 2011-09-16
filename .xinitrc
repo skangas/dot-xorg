@@ -18,6 +18,10 @@ export SDL_VIDEO_X11_DGAMOUSE="0"
 setxkbmap se_sv_dvorak
 setxkbmap -option ctrl:nocaps
 
+# move xsession errors out of the way
+mv ~/.xsession-errors.1 ~/.xsession-errors.2
+mv ~/.xsession-errors ~/.xsession-errors.1
+
 # fonts and other
 # [ -d /usr/share/fonts/type1/mathematica   ] && xset +fp /usr/share/fonts/type1/mathematica/
 [ -d $HOME/.fonts/misc                    ] && xset +fp $HOME/.fonts/misc/
@@ -50,8 +54,6 @@ fi
 #######################################
 # Start applications
 gnome-keyring-daemon
-
-touch "/tmp/arne$1"
 
 ## Window Manager
 if [ $1 = "gnome" ]; then
