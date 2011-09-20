@@ -61,7 +61,6 @@ if [ $1 = "gnome" ]; then
 else
     WM="/usr/bin/xmonad"
     emacs &
-    mpd &
 fi
 
 #WM="$HOME/src/stumpwm/stumpwm"
@@ -74,6 +73,8 @@ xscreensaver -no-splash &
 if [ "`hostname`" == "kollontaj" ]; then
     nm-applet &
     gnome-power-manager
+else if [ "`hostname`" == "huey" ]; then
+    mpd &
 fi
 
 # set cursor
