@@ -56,7 +56,7 @@ fi
 gnome-keyring-daemon
 
 ## Window Manager
-if [ $1 = "gnome" ]; then
+if [ $1 == "gnome" ]; then
     WM="gnome-session"
 else
     WM="/usr/bin/xmonad"
@@ -73,7 +73,7 @@ xscreensaver -no-splash &
 if [ "`hostname`" == "kollontaj" ]; then
     nm-applet &
     gnome-power-manager
-else if [ "`hostname`" == "huey" ]; then
+elif [ "`hostname`" == "huey" ]; then
     mpd &
 fi
 
