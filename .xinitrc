@@ -46,11 +46,6 @@ if [ -f $USERMODMAP ]; then
     xmodmap -quiet $USERMODMAP
 fi
 
-# Load XTerm character class (for cutting/pasting)
-# Contents of ${HOME}/.Xdefaults is as follows:
-#   XTerm*charClass: 33:48,37:48,45-47:48,64:48
-#xrdb -load ${HOME}/.Xdefaults
-
 #######################################
 # Start applications
 gnome-keyring-daemon
@@ -72,7 +67,7 @@ xscreensaver -no-splash &
 
 if [ "`hostname`" == "kollontaj" ]; then
     nm-applet &
-    gnome-power-manager
+    gnome-power-manager &
 elif [ "`hostname`" == "huey" ]; then
     mpd &
 fi
