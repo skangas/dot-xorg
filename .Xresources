@@ -67,6 +67,10 @@ URxvt*color13:  ZENBURN_COLOR_TERM_LIGHT_MAGENTA
 URxvt*color14:  ZENBURN_COLOR_TERM_LIGHT_CYAN
 URxvt*color15:  ZENBURN_COLOR_TERM_WHITE
 
+URxvt.keysym.M-u:       perl:url-select:select_next
+URxvt.urlLauncher:      firefox
+URxvt.underlineURLs:    true
+
 Xcursor.theme:             whiteglass
 xpdf.initialZoom:          width
 
