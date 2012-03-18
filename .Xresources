@@ -71,7 +71,7 @@ URxvt.perl-lib:         /home/skangas/.urxvt/
 URxvt.perl-ext-common:  url-select
 URxvt.keysym.M-u:       perl:url-select:select_next
 URxvt.urlLauncher:      conkeror
-URxvt.underlineURLs:    true
+URxvt.underlineURLs:    false
 
 Xcursor.theme:             whiteglass
 xpdf.initialZoom:          width
