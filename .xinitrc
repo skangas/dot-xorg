@@ -19,6 +19,7 @@ setxkbmap se_sv_dvorak
 setxkbmap -option ctrl:nocaps
 
 # move xsession errors out of the way
+mv ~/.xsession-errors.2 ~/.xsession-errors.3
 mv ~/.xsession-errors.1 ~/.xsession-errors.2
 mv ~/.xsession-errors ~/.xsession-errors.1
 
@@ -48,7 +49,9 @@ fi
 
 #######################################
 # Start applications
-gnome-keyring-daemon
+if ! pgrep gnome-keyring-daemon > /dev/null ; then
+    export $(gnome-keyring-daemon --start --daemonize --components=pkcs11,secrets,ssh)
+fi
 
 ## Window Manager
 if [ $1 == "gnome" ]; then
@@ -61,8 +64,10 @@ fi
 #WM="$HOME/src/stumpwm/stumpwm"
 $WM & wmpid=$!
 
-## Applications
-#unclutter -idle 1 -jitter 10 -root &
+if ! pgrep unclutter > /dev/null; then
+    unclutter -idle 3 -jitter 10 -root -noevents &
+fi
+
 xscreensaver -no-splash &
 
 if [ "`hostname`" == "kollontaj" ]; then
