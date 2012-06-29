@@ -12,7 +12,7 @@ if [ ! -z "${UID:-}" ] && [ "$UID" != "0" ] && [ -z "${DISPLAY}" ] && [ ! -z "${
         chvt 8
         while true; do
             echo "starting xorg"
-            startx
+            xinit
             echo "sleeping 2 seconds"
             sleep 2
         done
