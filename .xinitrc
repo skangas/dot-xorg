@@ -2,8 +2,7 @@
 
 . ~/.environment
 
-# go to home directory
-cd
+cd $HOME
 
 # Fix DGA Mouse Support that conflicts with SDL
 # see https://bugs.launchpad.net/ubuntu/+source/unclutter/+bug/61105
@@ -36,6 +35,9 @@ xset m 2 2         # mouse sensitivity
 xset r rate 300 40 # keybord repeat rate
 #xgamma -gamma 1.1
 
+# set cursor
+xsetroot -cursor_name left_ptr
+
 # merge in defaults and keymaps
 USERRESOURCES=$HOME/.Xresources
 USERMODMAP=$HOME/.Xmodmap
@@ -47,43 +49,4 @@ if [ -f $USERMODMAP ]; then
     xmodmap -quiet $USERMODMAP
 fi
 
-#######################################
-# Start applications
-if ! pgrep gnome-keyring-daemon > /dev/null ; then
-    export $(gnome-keyring-daemon --start --daemonize --components=pkcs11,secrets,ssh)
-fi
-
-## Window Manager
-if [ $1 == "gnome" ]; then
-    WM="gnome-session"
-else
-    WM="/usr/bin/xmonad"
-    emacs &
-fi
-
-#WM="$HOME/src/stumpwm/stumpwm"
-$WM & wmpid=$!
-
-if ! pgrep unclutter > /dev/null; then
-    unclutter -idle 3 -jitter 10 -root -noevents &
-fi
-
-xscreensaver -no-splash &
-
-if [ "`hostname`" == "kollontaj" ]; then
-    nm-applet &
-    gnome-power-manager &
-elif [ "`hostname`" == "huey" ]; then
-    mpd &
-fi
-
-# set cursor
-xsetroot -cursor_name left_ptr
-
-# set background
-if [ -x ~/bin/wallpaper.sh ]; then
-    ~/bin/wallpaper.sh
-fi
-
-# HANG POINT - wait for window manager to exit
-wait $wmpid
+exec /usr/bin/ck-launch-session /usr/bin/dbus-launch ~/.xinitrc.run $1

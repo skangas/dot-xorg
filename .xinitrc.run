@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# Start X applications
+
+if ! pgrep gnome-keyring-daemon > /dev/null ; then
+    export $(gnome-keyring-daemon --start --daemonize --components=gpg,pkcs11,secrets,ssh)
+fi
+
+## Window Manager
+if [ $1 == "gnome" ]; then
+    WM="gnome-session"
+else
+    WM="/usr/bin/xmonad"
+    emacs &
+fi
+
+#WM="$HOME/src/stumpwm/stumpwm"
+$WM & wmpid=$!
+
+if [ "`hostname`" == "kollontaj" ]; then
+    nm-applet &
+    gnome-power-manager &
+elif [ "`hostname`" == "huey" ]; then
+    mpd &
+fi
+
+if ! pgrep unclutter > /dev/null; then
+    unclutter -idle 3 -jitter 10 -root -noevents &
+fi
+
+xscreensaver -no-splash &
+
+# set background
+if [ -x ~/bin/wallpaper.sh ]; then
+    ~/bin/wallpaper.sh
+fi
+
+# HANG POINT - wait for window manager to exit
+wait $wmpid
