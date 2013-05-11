@@ -114,7 +114,7 @@ UXTerm*colorBDMode:        true
 URxvt.depth:               32
 URxvt.foreground:          ZENBURN_COLOR_FG
 URxvt.background:          ZENBURN_COLOR_BG
-URxvt.saveLines:           1000
+URxvt.saveLines:           50000
 URxvt.font:                -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
 URxvt.boldFont:            -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
 URxvt.italicFont:          -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
