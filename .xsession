@@ -1,1 +1,1 @@
-/home/skangas/.xinitrc
+.xinitrc
