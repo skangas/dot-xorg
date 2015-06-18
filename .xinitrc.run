@@ -22,6 +22,7 @@ if [ "`hostname`" == "kollontaj" ]; then
     gnome-power-manager &
 elif [ "`hostname`" == "huey" ]; then
     mpd &
+    mpdscribble &
     dropbox start &
 fi
 
