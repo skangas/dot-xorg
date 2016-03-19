@@ -76,7 +76,7 @@ URxvt.underlineURLs:    false
 Xcursor.theme:             whiteglass
 xpdf.initialZoom:          width
 
-Emacs*font:                -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
+Emacs*font:                -xos4-terminus-medium-r-normal--16----c--iso10646-1
 Emacs.cursorColor:         ZENBURN_COLOR_TERM_WHITE
 Emacs.foreground:          ZENBURN_COLOR_FG
 Emacs.background:          ZENBURN_COLOR_BG
@@ -86,7 +86,7 @@ Emacs.verticalScrollBars:  off
 Emacs.toolBar:             off
 Emacs.scrollBarWidth:      0
 
-XTerm*font:                -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
+XTerm*font:                -xos4-terminus-medium-r-normal--16----c--iso10646-1
 XTerm*foreground:          ZENBURN_COLOR_FG
 XTerm*background:          ZENBURN_COLOR_BG
 XTerm*trimSelection:       true
@@ -98,8 +98,8 @@ XTerm*boldColors:          false
 XTerm*boldMode:            false
 XTerm*colorBDMode:         true
 XTerm*locale:              true
-                            
-UXTerm*font:               -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
+
+UXTerm*font:               -xos4-terminus-medium-r-normal--16----c--iso10646-1
 UXTerm*foreground:         ZENBURN_COLOR_FG
 UXTerm*background:         ZENBURN_COLOR_BG
 UXTerm*trimSelection:      true
@@ -115,10 +115,10 @@ URxvt.depth:               32
 URxvt.foreground:          ZENBURN_COLOR_FG
 URxvt.background:          ZENBURN_COLOR_BG
 URxvt.saveLines:           50000
-URxvt.font:                -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
-URxvt.boldFont:            -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
-URxvt.italicFont:          -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
-URxvt.boldItalicFont:      -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
+URxvt.font:                -xos4-terminus-medium-r-normal--16----c--iso10646-1
+URxvt.boldFont:            -xos4-terminus-medium-r-normal--16----c--iso10646-1
+URxvt.italicFont:          -xos4-terminus-medium-r-normal--16----c--iso10646-1
+URxvt.boldItalicFont:      -xos4-terminus-medium-r-normal--16----c--iso10646-1
 URxvt.insecure:            true
 URxvt.scrollBar:           false
 URxvt.visualBell:          true
