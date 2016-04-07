@@ -32,7 +32,7 @@ xset fp rehash
 # misc settings
 xset b off         # no bell
 xset m 2 2         # mouse sensitivity
-xset r rate 300 40 # keybord repeat rate
+xset r rate 200 50 # keybord repeat rate
 #xgamma -gamma 1.1
 
 # set cursor
