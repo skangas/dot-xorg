@@ -20,7 +20,7 @@ $WM & wmpid=$!
 if [ "`hostname`" == "kollontaj" ]; then
     nm-applet &
     gnome-power-manager &
-elif [ "`hostname`" == "huey" ]; then
+elif [ "`hostname`" == "joffe" ]; then
     mpd &
     mpdscribble &
     dropbox start &
