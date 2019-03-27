@@ -123,6 +123,7 @@ URxvt.insecure:            true
 URxvt.scrollBar:           false
 URxvt.visualBell:          true
 URxvt.metaSendsEscape:     true
+Urxvt*meta8: true
 
 !xbiff*fullPixmap:mailfull
 !xbiff*emptyPixmap:mailempty
