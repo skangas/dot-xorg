@@ -67,12 +67,6 @@ URxvt*color13:  ZENBURN_COLOR_TERM_LIGHT_MAGENTA
 URxvt*color14:  ZENBURN_COLOR_TERM_LIGHT_CYAN
 URxvt*color15:  ZENBURN_COLOR_TERM_WHITE
 
-URxvt.perl-lib:         /home/skangas/.urxvt/
-URxvt.perl-ext-common:  url-select
-URxvt.keysym.M-u:       perl:url-select:select_next
-URxvt.urlLauncher:      conkeror
-URxvt.underlineURLs:    false
-
 Xcursor.theme:             whiteglass
 xpdf.initialZoom:          width
 
@@ -122,8 +116,31 @@ URxvt.boldItalicFont:      -xos4-terminus-medium-r-*--18-*-*-*-*-*-iso10646-1
 URxvt.insecure:            true
 URxvt.scrollBar:           false
 URxvt.visualBell:          true
-URxvt.metaSendsEscape:     true
+
 Urxvt*meta8: true
+
+! Needs to be true for Emacs
+URxvt.metaSendsEscape:     true
+!URxvt.metaSendsEscape:     false
+
+
+! Disable "Picture Insert Mode"
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+
+URxvt.perl-lib:         /home/skangas/.urxvt/
+URxvt.perl-ext-common:  url-select
+URxvt.keysym.M-u:       perl:url-select:select_next
+URxvt.urlLauncher:      conkeror
+URxvt.underlineURLs:    false
+
+URxvt.perl-ext-common: default,matcher,vtwheel,resize-font
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button:   1
+URxvt.keysym.Control-minus:   resize-font:smaller
+URxvt.keysym.Control-plus:    resize-font:bigger
+URxvt.keysym.Control-equal: resize-font:reset
 
 !xbiff*fullPixmap:mailfull
 !xbiff*emptyPixmap:mailempty
