@@ -130,13 +130,11 @@ URxvt.iso14755_52: false
 
 
 URxvt.perl-lib:         /home/skangas/.urxvt/
-URxvt.perl-ext-common:  url-select
-URxvt.keysym.M-u:       perl:url-select:select_next
-URxvt.urlLauncher:      conkeror
+URxvt.perl-ext-common: default,matcher,vtwheel,resize-font,url-select
 URxvt.underlineURLs:    false
-
-URxvt.perl-ext-common: default,matcher,vtwheel,resize-font
-URxvt.url-launcher: /usr/bin/firefox
+URxvt.keysym.M-u:       perl:url-select:select_next
+URxvt.url-launcher:     firefox
+URxvt.urlLauncher:      firefox
 URxvt.matcher.button:   1
 URxvt.keysym.Control-minus:   resize-font:smaller
 URxvt.keysym.Control-plus:    resize-font:bigger

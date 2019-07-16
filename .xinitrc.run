@@ -7,7 +7,7 @@ if ! pgrep gnome-keyring-daemon > /dev/null ; then
 fi
 
 ## Window Manager
-if [ $1 == "gnome" ]; then
+if [ "$1" == "gnome" ]; then
     WM="gnome-session"
 else
     WM="/usr/bin/xmonad"
@@ -23,11 +23,12 @@ if [ "`hostname`" == "kollontaj" ]; then
 elif [ "`hostname`" == "joffe" ]; then
     mpd &
     mpdscribble &
-    dropbox start &
+    # dropbox start &
+    sudo mount -o uid=skangas /dev/sdc2 /mnt/usb
 fi
 
 if ! pgrep unclutter > /dev/null; then
-    unclutter -idle 3 -jitter 10 -root -noevents &
+        unclutter -idle 3 -jitter 10 -root -noevents &
 fi
 
 xscreensaver -no-splash &
