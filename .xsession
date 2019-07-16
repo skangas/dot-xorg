@@ -36,7 +36,7 @@ xset r rate 200 50 # keybord repeat rate
 #xgamma -gamma 1.1
 
 # set cursor
-xsetroot -cursor_name left_ptr
+xsetroot -cursor_name right_ptr
 
 # merge in defaults and keymaps
 USERRESOURCES=$HOME/.Xresources
