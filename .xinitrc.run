@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo @@@ .xinitrc.run
+
 # Start X applications
 
 if ! pgrep gnome-keyring-daemon > /dev/null ; then
@@ -26,12 +28,6 @@ elif [ "`hostname`" == "joffe" ]; then
     # dropbox start &
     sudo mount -o uid=skangas /dev/sdc2 /mnt/usb
 fi
-
-if ! pgrep unclutter > /dev/null; then
-        unclutter -idle 3 -jitter 10 -root -noevents &
-fi
-
-xscreensaver -no-splash &
 
 # set background
 if [ -x ~/bin/wallpaper.sh ]; then
