@@ -25,6 +25,7 @@ if [ "`hostname`" == "kollontaj" ]; then
 elif [ "`hostname`" == "joffe" ]; then
     mpd &
     mpdscribble &
+    redshift &
     # dropbox start &
     sudo mount -o uid=skangas /dev/sdc2 /mnt/usb
 fi
