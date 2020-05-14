@@ -53,7 +53,7 @@ fi
 
 # unclutter
 if ! pgrep unclutter > /dev/null; then
-        unclutter -idle 3 -jitter 10 -root -noevents &
+        unclutter -idle 5 -jitter 10 -root -noevents &
 fi
 
 # xscreensaver
